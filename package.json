@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-plugin-source-eventbrite",
+  "version": "1.0.0",
+  "description": "Gatsby plugin to load Eventbrite Events",
+  "main": "gatsby-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [],
+  "author": "Kyle Welch <kwelch0626@gmail.com> (https://kwelch.dev/)",
+  "license": "MIT",
+  "dependencies": {
+    "eventbrite": "^1.2.1",
+    "query-string": "^6.3.0"
+  }
+}
