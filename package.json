@@ -6,11 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
-  "keywords": [],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "eventbrite"
+  ],
   "author": "Kyle Welch <kwelch0626@gmail.com> (https://kwelch.dev/)",
   "license": "MIT",
   "dependencies": {
     "eventbrite": "^1.2.1",
     "query-string": "^6.3.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/kwelch/gatsby-plugin-source-eventbrite"
+  },
+  "bugs": {
+    "url": "https://github.com/kwelch/gatsby-plugin-source-eventbrite/issues"
   }
 }

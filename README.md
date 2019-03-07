@@ -1,5 +1,7 @@
 # gatsby-plugin-source-eventbrite
 
+[<img src="https://img.shields.io/npm/v/gatsby-plugin-source-eventbrite.svg?style=for-the-badge" alt="npm version" />](https://www.npmjs.com/package/gatsby-plugin-source-eventbrite)
+
 A Gatsby plugin to asynchronously load events from the [Eventbrite Event Search API](https://www.eventbrite.com/platform/api#/reference/event-search/list/search-events).
 
 > Note: this will only load 50 events, this is to avoid thrashing the servers and eagerly loading.
@@ -20,7 +22,7 @@ yarn add gatsby-plugin-source-eventbrite
 
 ## Usage
 
-In your `gatsby-config.js` file, load in the plugin along with which web fonts to load. For example, loading Google Fonts could look like this:
+In your `gatsby-config.js` file, load in the plugin along with the parameters of which events to load:
 
 ```javascript
 module.exports = {
@@ -39,5 +41,3 @@ module.exports = {
   ],
 };
 ```
-
-For a list of all available options, consult the [Web Font Loader readme](https://github.com/typekit/webfontloader).
