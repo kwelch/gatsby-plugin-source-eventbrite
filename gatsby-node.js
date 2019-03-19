@@ -1,23 +1,29 @@
 const queryString = require('query-string');
+const createNodeHelpers = require('gatsby-node-helpers').default;
 const eventbrite = require('eventbrite').default;
 
-exports.sourceNodes = async function(
-  { actions: { createNode }, createNodeId, createContentDigest },
-  { query, token, verbose = true }
-) {
-  const processEvent = (event) => {
-    return {
-      ...event,
-      id: createNodeId(`eventbrite-event-${event.id}`),
-      parent: null,
-      children: [],
-      internal: {
-        type: `EventbriteEvent`,
-        content: JSON.stringify(event),
-        contentDigest: createContentDigest(event),
-      },
-    };
+const {
+  createNodeFactory,
+} = createNodeHelpers({
+  typePrefix: `Eventbrite`,
+})
+
+const EventNode = createNodeFactory('Event', node => {
+  // HACK: since types are inferred we need to mock them or queries fail
+  node.venue = node.venue || {
+    id: '',
+    name: '',
+    address: {
+      localized_address_display: '',
+    },
   };
+  return node
+})
+
+exports.sourceNodes = async function(
+  { actions: { createNode, setPluginStatus } },
+  { query, token }
+) {
   if (!token) {
     throw new Error('Missing Eventbrite OAuth token');
   }
@@ -28,8 +34,10 @@ exports.sourceNodes = async function(
     );
 
     events
-      .map((event) => processEvent(event))
-      .forEach((event) => createNode(event));
+      .map((event) => EventNode(event))
+      .forEach((eventNode) => createNode(eventNode));
+
+    setPluginStatus({lastFetched: new Date()});
   } catch (err) {
     console.error('EB Fetch fail:', err);
   }
