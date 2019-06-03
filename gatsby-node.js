@@ -1,4 +1,4 @@
-const queryString = require('query-string');
+const queryString = require('querystring');
 const createNodeHelpers = require('gatsby-node-helpers').default;
 const eventbrite = require('eventbrite').default;
 
