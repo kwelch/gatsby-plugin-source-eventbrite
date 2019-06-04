@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-source-eventbrite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Gatsby plugin to load Eventbrite Events",
   "main": "gatsby-node.js",
   "scripts": {
@@ -15,8 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "eventbrite": "^1.2.1",
-    "gatsby-node-helpers": "^0.3.0",
-    "query-string": "^6.3.0"
+    "gatsby-node-helpers": "^0.3.0"
   },
   "peerDependencies": {
     "gatsby": "^2.0.0"
