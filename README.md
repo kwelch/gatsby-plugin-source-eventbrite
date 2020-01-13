@@ -1,5 +1,7 @@
 # gatsby-plugin-source-eventbrite
 
+> NOTE: THESE ARE THE V2 DOCS. DON'T WORRY YOU PROBABLY WANT THESE SINCE V1 IS BROKE
+
 [<img src="https://img.shields.io/npm/v/gatsby-plugin-source-eventbrite.svg?style=for-the-badge" alt="npm version" />](https://www.npmjs.com/package/gatsby-plugin-source-eventbrite)
 
 A Gatsby plugin to asynchronously load events from the [Eventbrite List Events By Organization](https://www.eventbrite.com/platform/api#/reference/event/list/list-events-by-organization).
@@ -17,13 +19,13 @@ To upgrade please ensure your `gatsby-config.js`, contains a key for `organizati
 With npm:
 
 ```bash
-npm install --save gatsby-plugin-source-eventbrite
+npm install --save gatsby-plugin-source-eventbrite@next
 ```
 
 Or with Yarn:
 
 ```bash
-yarn add gatsby-plugin-source-eventbrite
+yarn add gatsby-plugin-source-eventbrite@next
 ```
 
 ## Usage
