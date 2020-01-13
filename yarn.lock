@@ -10,9 +10,9 @@ encoding@^0.1.11:
     iconv-lite "~0.4.13"
 
 eventbrite@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/eventbrite/-/eventbrite-1.2.1.tgz#cdb19a270ddcaf83279af17a86ac804cba26c12d"
-  integrity sha512-/jfFoQdtOv8So4Lu4xX/KX48xxvLsSWc5lHsKqRfgn7EPuUOqvkb/mApEjtKCarx5ZvKL88CohDOUQx8ACYcYA==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/eventbrite/-/eventbrite-1.2.2.tgz#ea0d92e03424d7c531bbadec63a44c5e6d01524d"
+  integrity sha512-Oo8Hk2udW5L9zRG0GO4ic/Dc9hvrtxRTIPw32PR2VYwinRnLHr4WWx7JPjIHnzGvigc3MTeuuPwQ4XCW4MoXrQ==
   dependencies:
     isomorphic-fetch "^2.2.1"
 
@@ -51,9 +51,9 @@ json-stringify-safe@^5.0.1:
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
 lodash@^4.17.4:
-  version "4.17.14"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
-  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 node-fetch@^1.0.1:
   version "1.7.3"
