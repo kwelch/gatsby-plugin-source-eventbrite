@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-source-eventbrite",
-  "version": "1.0.3",
+  "version": "2.0.0-next.0",
   "description": "Gatsby plugin to load Eventbrite Events",
   "main": "gatsby-node.js",
   "scripts": {
