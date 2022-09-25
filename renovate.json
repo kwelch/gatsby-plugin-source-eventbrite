@@ -10,5 +10,7 @@
   "lockFileMaintenance": {
     "extends": ["group:all"],
     "commitMessageAction": "Update"
-  }
+  },
+  "automerge": true,
+  "dependencyDashboard": true
 }
