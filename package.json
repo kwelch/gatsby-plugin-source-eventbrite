@@ -15,10 +15,10 @@
   "license": "MIT",
   "dependencies": {
     "eventbrite": "^1.2.1",
-    "gatsby-node-helpers": "^0.3.0"
+    "gatsby-node-helpers": "^1.0.0"
   },
   "peerDependencies": {
-    "gatsby": "^2.0.0"
+    "gatsby": "^4.0.0"
   },
   "repository": {
     "url": "https://github.com/kwelch/gatsby-plugin-source-eventbrite"
